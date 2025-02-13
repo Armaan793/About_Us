@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Couples Interaction</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Couples Interactive Page</h1>
+    <form id="coupleForm">
+      <label for="activity">What's your favorite couple activity?</label>
+      <input type="text" id="activity" name="activity" required><br><br>
+
+      <label for="gift">What would be the perfect gift for your partner?</label>
+      <input type="text" id="gift" name="gift" required><br><br>
+
+      <label for="special">Any special date plans?</label>
+      <textarea id="special" name="special"></textarea><br><br>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <div id="response" style="display:none;">
+      <h3>Your Couple's Responses:</h3>
+      <p id="responseText"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
